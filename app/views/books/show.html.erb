@@ -1,20 +1,15 @@
 <div class="book">
-  <p class="title">   </p>
-  <p class="author">by   </p>
-  <p class="publisher">( )</p>
-  <p class="description">  </p>
+  <p class="title"> <%= book.title %> </p>
+  <p class="author">by <%= book.author %> </p>
+  <p class="publisher">(<%= book.publisher %>)</p>
+  <p class="description"> <%= book.description %> </p>
 </div>
 
 <div class="reviews">
   <% @reviews.each do |review| %>
     <div class="review">
-      <p class="author">  </p>
-      <p class="comment">  </p>
+      <p class="author"> <%= review.author %> </p>
+      <p class="comment"> <%= review.comment %> </p>
     </div>
   <% end %>
 </div>
-
-
-First we retrieve a single book, and save it in @book. Then we retrieve all of its reviews, and save them in @reviews. The has_many / belongs_to association lets us query for reviews like this.
-Finish the view app/views/books/show.html.erb. First display a book's details again. Then inside the loop, display each review.
-View the result by running your project. Click on a book's "See all Editorial Reviews" link to see its reviews.
