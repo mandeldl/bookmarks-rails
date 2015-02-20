@@ -44,6 +44,14 @@ b10 = Book.create(title: "The New Jim Crow", author: "Michelle Alexander", descr
 Review.create(comment: "Devastating. . . . Alexander does a fine job of truth-telling, pointing a finger where it rightly should be pointed: at all of us, liberal and conservative, white and black.", author: "Forbes", book_id: b10.id)
 Review.create(comment: "Invaluable . . . a timely and stunning guide to the labyrinth of propaganda, discrimination, and racist policies masquerading under other names that comprises what we call justice in America.", author: "Daily Kos", book_id: b10.id)
 
+b11 = Book.create(title: "Angelmaker", author: "Ai Gorget", description: "Sort of a wanna be whatshisface", publisher: "Verso maybe", weeks_on_list: 10, rank_this_week: 90)
+Review.create(comment: "Pretty meh.  Just remembered the author it reminds me of is Kurt Vonnegut.", author: "David", book_id: b11.id)
+Review.create(comment: "Maybe Daniel would like it - or Henry Prince.", author: "Mandel", book_id: b11.id)
+
+b12 = Book.create(title: "The Town", author: "Faulkner", description: "Some fun schemes", publisher: "Vintage", weeks_on_list: 1000, rank_this_week: 1)
+Review.create(comment: "Rocked my world", author: "Sarah", book_id: b12.id)
+Review.create(comment: "I'll probably read it once I'm done with Angelmaker.", author: "Mandel", book_id: b12.id)
+
 
 
 
